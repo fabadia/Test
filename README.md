@@ -7,13 +7,13 @@ curl -X GET \
   https://localhost:5001/api/Filiais \
   -H 'Postman-Token: ac93b3fb-27bf-4e7b-a220-ad0b46398d0d' \
   -H 'cache-control: no-cache'
-##Consultar
+## Consultar
 curl -X GET \
   https://localhost:5001/api/Filiais/1 \
   -H 'Postman-Token: ac93b3fb-27bf-4e7b-a220-ad0b46398d0d' \
   -H 'cache-control: no-cache'
 
-##Inserir
+## Inserir
 curl -X POST \
   https://localhost:5001/api/Filiais \
   -H 'Content-Type: application/json' \
@@ -23,7 +23,7 @@ curl -X POST \
 	nome: '\''Filial 2'\''
 }'
 
-##Atualizar
+## Atualizar
 curl -X PUT \
   https://localhost:5001/api/Filiais/2 \
   -H 'Content-Type: application/json' \
@@ -34,25 +34,25 @@ curl -X PUT \
 	nome: '\''Filial 2 - Alterado'\''
 }'
 
-##Excluir
+## Excluir
 curl -X DELETE \
   https://localhost:5001/api/Filiais/2 \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 25de329c-2bec-49a1-b233-9260d77583bc' \
   -H 'cache-control: no-cache'
 
-##Produtos
-##Listar
+# Produtos
+## Listar
 curl -X GET \
   https://localhost:5001/api/Produtos \
   -H 'Postman-Token: ac93b3fb-27bf-4e7b-a220-ad0b46398d0d' \
   -H 'cache-control: no-cache'
-##Consultar
+## Consultar
 curl -X GET \
   https://localhost:5001/api/Produtos/1 \
   -H 'Postman-Token: ac93b3fb-27bf-4e7b-a220-ad0b46398d0d' \
   -H 'cache-control: no-cache'
-##Inserir
+## Inserir
 curl -X POST \
   https://localhost:5001/api/Produtos \
   -H 'Content-Type: application/json' \
@@ -61,7 +61,7 @@ curl -X POST \
   -d '{
 	"descricao": "Limão"
 }'
-##Atualizar
+## Atualizar
 curl -X PUT \
   https://localhost:5001/api/Produtos/1 \
   -H 'Content-Type: application/json' \
@@ -70,30 +70,30 @@ curl -X PUT \
   -d '{
 	"descricao": "Limão"
 }'
-##Excluir
+## Excluir
 curl -X DELETE \
   https://localhost:5001/api/Produtos/1 \
   -H 'Postman-Token: 0c7a90ab-730e-4022-a6f9-cc676a6a1216' \
   -H 'cache-control: no-cache'
 
-#Listar Estoques
+# Listar Estoques
 curl -X GET \
   https://localhost:5001/api/Estoques \
   -H 'Postman-Token: 07622f9b-b210-4b84-a817-788400e4e27e' \
   -H 'cache-control: no-cache'
 
-#Pedidos de Estoque
-##Listar
+# Pedidos de Estoque
+## Listar
 curl -X GET \
   https://localhost:5001/api/PedidoEstoques \
   -H 'Postman-Token: ffe66326-f31b-4e67-83b1-941c61687bca' \
   -H 'cache-control: no-cache'
-##Consultar
+## Consultar
 curl -X GET \
   https://localhost:5001/api/PedidoEstoques/1 \
   -H 'Postman-Token: 83e48c9e-db5c-403f-be43-2c95eaa7fe92' \
   -H 'cache-control: no-cache'
-#Inserir Entrada
+# Inserir Entrada
 curl -X POST \
   https://localhost:5001/api/PedidoEstoques \
   -H 'Content-Type: application/json' \
@@ -109,7 +109,7 @@ curl -X POST \
 		{produtoId: 3, quantidade: 10},
 		]
 }'
-##Inserir Saída
+## Inserir Saída
 curl -X POST \
   https://localhost:5001/api/PedidoEstoques \
   -H 'Content-Type: application/json' \
