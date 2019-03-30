@@ -1,24 +1,20 @@
-<h1>Weather forecast</h1>
+<h1>Estoques</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<p *ngIf="!estoques"><em>Carregando...</em></p>
 
-<p *ngIf="!forecasts"><em>Loading...</em></p>
-
-<table class='table' *ngIf="forecasts">
+<table class='table' *ngIf="estoques">
   <thead>
     <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
+      <th>Filial</th>
+      <th>Produto</th>
+      <th>Quantidade</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let forecast of forecasts">
-      <td>{{ forecast.dateFormatted }}</td>
-      <td>{{ forecast.temperatureC }}</td>
-      <td>{{ forecast.temperatureF }}</td>
-      <td>{{ forecast.summary }}</td>
+    <tr *ngFor="let estoque of estoques">
+      <td>{{ estoque.filial }}</td>
+      <td>{{ estoque.descricao }}</td>
+      <td>{{ estoque.quantidade }}</td>
     </tr>
   </tbody>
 </table>
