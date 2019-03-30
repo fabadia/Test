@@ -10,6 +10,7 @@ namespace Test.Models
         public int Id { get; set; }
         public int FilialId { get; set; }
         public DateTime Data { get; set; }
+        public TipoPedido Tipo { get; set; }
 
         public Filial Filial { get; set; }
         public ICollection<ItemPedidoEstoque> ItemPedidoEstoques { get; set; }
